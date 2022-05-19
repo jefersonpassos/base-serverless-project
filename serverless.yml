@@ -1,0 +1,25 @@
+service: base-serverless-project
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  deploymentMethod: direct
+  stage: ${opt:stage, 'dev'}
+  environment: ${file(config/environment.yml)}
+  # iamRoleStatements: ${file(config/statements.yml)}
+  # cfnRole: arn:aws:iam::849986624121:role/base-serverless-project-role
+
+# package:
+#  exclude:
+#    - node_modules/**
+
+functions:
+  - ${file(config/functions.yml)}
+
+custom: ${file(config/custom.yml)}
+
+plugins:
+  - serverless-offline
+
+# resources:
+#   Resources: ${file(config/resources.yml)}

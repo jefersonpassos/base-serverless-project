@@ -1,0 +1,6 @@
+EXAMPLE_ENV:
+  dev: 'env dev'
+  hml: 'env hml'
+  prd: 'env prd'
+MONGO_URI:
+  dev:

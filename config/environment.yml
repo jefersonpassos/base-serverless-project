@@ -1,0 +1,2 @@
+EXAMPLE_ENV: ${self:custom.EXAMPLE_ENV.${self:provider.stage}}
+MONGO_URI: ${self:custom.MONGO_URI.${self:provider.stage}}

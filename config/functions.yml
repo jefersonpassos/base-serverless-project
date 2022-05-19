@@ -1,0 +1,9 @@
+handler1:
+  handler: src/Handlers.handler1
+  memorySize: 192
+  reservedConcurrency: 10
+  events:
+    - http:
+        path: /
+        method: post
+        cors: true

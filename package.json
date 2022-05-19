@@ -1,0 +1,26 @@
+{
+  "name": "base-serverless-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "sls offline",
+    "test": "",
+    "deploy": "sls deploy",
+    "lint": "eslint *.js .",
+    "lint:fix": "eslint --fix *.js ."
+  },
+  "engine": {
+    "node": "16.15.0"
+  },
+  "dependencies": {
+    "@middy/core": "^3.0.3",
+    "middy": "^0.36.0",
+    "mongoose": "^6.3.3",
+    "serverless": "^3.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "serverless-offline": "^5.8.0"
+  }
+}
